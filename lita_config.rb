@@ -14,14 +14,10 @@ Lita.configure do |config|
   # the ability to add and remove other users from authorization groups.
   # What is considered a user ID will change depending on which adapter you use.
   # config.robot.admins = ["1", "2"]
-
-  # The adapter you want to connect with. Make sure you've added the
-  # appropriate gem to the Gemfile.
-  config.robot.adapter = :shell
-
-  ## Example: Set options for the chosen adapter.
-  # config.adapter.username = "myname"
-  # config.adapter.password = "secret"
+  config.robot.adapter = :hipchat
+  config.adapters.hipchat.jid = ENV['HIPCHAT_JID']
+  config.adapters.hipchat.password = ENV['HIPCHAT_PW']
+  config.handlers.forecast.api_key = ENV['FORECAST_API_KEY']
 
   ## Example: Set options for the Redis connection.
   # config.redis.host = "127.0.0.1"
