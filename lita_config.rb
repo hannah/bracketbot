@@ -1,6 +1,6 @@
 Lita.configure do |config|
   # The name your robot will use.
-  config.robot.name = "Lita"
+  config.robot.name = "Blinkie"
 
   # The locale code for the language to use.
   # config.robot.locale = :en
@@ -17,6 +17,8 @@ Lita.configure do |config|
   config.robot.adapter = :hipchat
   config.adapters.hipchat.jid = ENV['HIPCHAT_JID']
   config.adapters.hipchat.password = ENV['HIPCHAT_PW']
+  config.redis[:url] = ENV["REDISTOGO_URL"]
+  config.http.port = ENV["PORT"]
   config.handlers.forecast.api_key = ENV['FORECAST_API_KEY']
 
   ## Example: Set options for the Redis connection.
