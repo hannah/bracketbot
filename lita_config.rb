@@ -1,6 +1,6 @@
 Lita.configure do |config|
   # The name your robot will use.
-  config.robot.name = "Blinkie"
+  config.robot.name = "Go Blinkie"
 
   # The locale code for the language to use.
   # config.robot.locale = :en
@@ -15,8 +15,8 @@ Lita.configure do |config|
   # What is considered a user ID will change depending on which adapter you use.
   # config.robot.admins = ["1", "2"]
   config.robot.adapter = :hipchat
-  config.adapters.hipchat.jid = ENV['HIPCHAT_JID']
-  config.adapters.hipchat.password = ENV['HIPCHAT_PW']
+  config.adapters.hipchat.jid = ENV["HIPCHAT_JID"]
+  config.adapters.hipchat.password = ENV["HIPCHAT_PW"]
   config.redis[:url] = ENV["REDISTOGO_URL"]
   config.http.port = ENV["PORT"]
   config.handlers.forecast.api_key = ENV['FORECAST_API_KEY']
