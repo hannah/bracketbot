@@ -29,6 +29,8 @@ GEM
       thor (>= 0.18.1)
     lita-down-for-everyone (0.0.3)
       lita
+    lita-eightball (1.0.4)
+      lita (>= 2.0)
     lita-excuses (0.0.6)
       lita (>= 2.2)
       nokogiri
@@ -79,6 +81,7 @@ PLATFORMS
 DEPENDENCIES
   lita
   lita-down-for-everyone
+  lita-eightball
   lita-excuses
   lita-forecast
   lita-google

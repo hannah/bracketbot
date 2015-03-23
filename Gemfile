@@ -2,6 +2,7 @@ source "https://rubygems.org"
 
 gem 'lita'
 gem 'lita-down-for-everyone'
+gem 'lita-eightball'
 gem 'lita-excuses'
 gem 'lita-forecast'
 gem 'lita-google'
